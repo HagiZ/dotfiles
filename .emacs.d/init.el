@@ -1,5 +1,5 @@
-;; Emacs init.el
-;; daniel(at)hagiz.se
+;;; Emacs init.el
+;;; daniel(at)hagiz.se
 
 ;; Setup the package manager.
 (require 'package)
@@ -7,6 +7,9 @@
 (add-to-list 'package-archives
 	     '("melpa" . "https://melpa.org/packages/")
 	     '("melpa-stable" . "https://stable.melpa.org/packages/"))
+
+(add-to-list 'package-archives
+	     '("org" . "https://orgmode.org/elpa/") t)
 
 ;; Initialize the package manager.
 (package-initialize)
